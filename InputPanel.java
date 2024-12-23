@@ -27,7 +27,7 @@ public class InputPanel extends JPanel
 
         //Submit Button
         submitButton = new JButton("Submit");
-        submitButton.setForeground(Color.ORANGE);
+        submitButton.setForeground(Color.CYAN);
         submitButton.setPreferredSize(new Dimension(100, 40));
         this.add(submitButton);
 

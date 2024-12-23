@@ -7,8 +7,6 @@ import javax.swing.JLabel;
 
 import javax.swing.SwingConstants;
 
-
-
 public class GameFrame extends JFrame 
 {
     
@@ -26,18 +24,11 @@ public class GameFrame extends JFrame
        titleLabel.setFont(new Font("Arial", Font.BOLD, 36));
        this.add(titleLabel, BorderLayout.NORTH);
 
-       
-        //Input panel
         //Input box and button
         InputPanel panel = new InputPanel();
         panel.setBackground(new Color(73,73, 73));
         this.add(panel, BorderLayout.SOUTH);
 
-
        this.setVisible(true);
-       
-
     }
-
-
 }
