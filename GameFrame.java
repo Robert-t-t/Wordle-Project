@@ -9,6 +9,8 @@ import javax.swing.SwingConstants;
 
 public class GameFrame extends JFrame 
 {
+    private GridPanel gridPanel;
+    private InputPanel inputPanel;
     
     public GameFrame()
     {
@@ -24,11 +26,31 @@ public class GameFrame extends JFrame
        titleLabel.setFont(new Font("Arial", Font.BOLD, 36));
        this.add(titleLabel, BorderLayout.NORTH);
 
-        //Input box and button
-        InputPanel panel = new InputPanel();
-        panel.setBackground(new Color(73,73, 73));
-        this.add(panel, BorderLayout.SOUTH);
+
+
+        //create and addd the input panel
+        inputPanel = new InputPanel();
+        inputPanel.setBackground(new Color(73,73, 73));
+        this.add(inputPanel, BorderLayout.SOUTH);
+
+        //Create and add the grid panel
+        gridPanel = new GridPanel();
+        this.add(gridPanel, BorderLayout.CENTER);
+
 
        this.setVisible(true);
     }
+
+
+
+    public GridPanel getGridPanel()
+    {
+        return gridPanel;
+    }
+
+    public InputPanel getInputPanel()
+    {
+        return inputPanel;
+    }
+
 }
